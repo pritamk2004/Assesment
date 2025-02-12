@@ -10,7 +10,7 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     await login(email, password);
-    window.location.href = "/profile";
+    window.location.href = "https://waysaheadglobal-backend.onrender.com/profile";
   };
 
   return (
