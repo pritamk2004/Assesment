@@ -101,7 +101,7 @@ git push origin main
 - **Docker Support:** Available for easy deployment.
 - **Future Enhancements:** AI-powered recommendations & analytics.
 
-📩 **Need Help?** Contact support@waysaheadglobal.com
+📩 **Need Help?** Contact kundupritam608@gmail.com
 
 ---
 
