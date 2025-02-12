@@ -9,7 +9,7 @@ function News() {
   const [news, setNews] = useState([]);
 
   useEffect(() => {
-    axios.get('/api/news')
+    axios.get('https://waysaheadglobal-backend.onrender.com/api/news')
       .then(res => setNews(res.data))
       .catch(err => console.error(err));
   }, []);
