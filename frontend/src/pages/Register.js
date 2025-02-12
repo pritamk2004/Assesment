@@ -9,7 +9,7 @@ function Register() {
     const handleSubmit = async (e) => {
       e.preventDefault();
       try {
-        await axios.post('/api/auth/register', form);
+        await axios.post('https://waysaheadglobal-backend.onrender.com/api/auth/register', form);
         alert('Registration successful!');
       } catch (error) {
         console.error(error);
