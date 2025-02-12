@@ -9,7 +9,7 @@ function Careers() {
   const [jobs, setJobs] = useState([]);
 
   useEffect(() => {
-    axios.get('/api/jobs')
+    axios.get('https://waysaheadglobal-backend.onrender.com/api/jobs')
       .then(res => setJobs(res.data))
       .catch(err => console.error('Error fetching jobs:', err));
   }, []);
