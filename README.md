@@ -1,70 +1,109 @@
-# Getting Started with Create React App
+# **WaysAhead Global - Official Project Documentation**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## **📌 Overview**
+WaysAhead Global is a full-stack AI-powered platform offering job listings, chatbot assistance, AI-driven analytics, and interactive services. This project is built using **React.js**, **Node.js (Express.js)**, **MongoDB**, and **Material UI**.
 
-## Available Scripts
+## **🔧 Tech Stack**
+- **Frontend:** React.js, Material UI, Tailwind CSS, Framer Motion
+- **Backend:** Node.js, Express.js, MongoDB
+- **State Management:** Context API
+- **Authentication:** JWT-based authentication
+- **Deployment:** Netlify (Frontend), Render (Backend), MongoDB Atlas (Database)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## **📂 Project Structure**
+```
+waysahead-global/
+│── frontend/                # React Frontend
+│   ├── src/
+│   │   ├── components/      # Reusable UI components
+│   │   ├── context/         # Authentication Context
+│   │   ├── pages/           # Individual pages
+│   │   ├── App.js           # Main Application
+│   │   ├── theme.js         # Theme Settings
+│── backend/                 # Node.js Backend
+│   ├── models/              # MongoDB Models
+│   ├── routes/              # API Routes
+│   ├── controllers/         # Business Logic
+│   ├── server.js            # Main Server File
+│── README.md                # Documentation
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## **💻 Installation & Setup**
+### **1️⃣ Clone the Repository**
+```bash
+git clone https://github.com/your-username/waysahead-global.git
+cd waysahead-global
+```
 
-### `npm test`
+### **2️⃣ Setup Backend**
+```bash
+cd backend
+npm install
+```
+- Create a `.env` file and add:
+```env
+MONGO_URI=your_mongodb_connection
+JWT_SECRET=your_secret_key
+PORT=5000
+```
+- Start the backend:
+```bash
+npm start
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### **3️⃣ Setup Frontend**
+```bash
+cd frontend
+npm install
+```
+- Start the frontend:
+```bash
+npm start
+```
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## **🚀 Deployment**
+### **1️⃣ Deploy Frontend to Netlify**
+```bash
+cd frontend
+npm run build
+netlify deploy --prod
+```
+- Ensure Netlify CLI is installed: `npm install -g netlify-cli`
+- Login to Netlify: `netlify login`
+- Link your project: `netlify init`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### **2️⃣ Deploy Backend to Render**
+- Push backend code to GitHub:
+```bash
+cd backend
+git init
+git add .
+git commit -m "Deploy backend"
+git push origin main
+```
+- Go to **Render.com** and create a new Web Service.
+- Connect your GitHub repo and deploy.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### **3️⃣ Use MongoDB Atlas**
+- Create a MongoDB Atlas cluster.
+- Update `.env` with MongoDB URI.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## **📖 Additional Notes**
+- **Testing:** Jest for backend testing.
+- **Docker Support:** Available for easy deployment.
+- **Future Enhancements:** AI-powered recommendations & analytics.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+📩 **Need Help?** Contact support@waysaheadglobal.com
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+🚀 **Project Ready for Production!**
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
