@@ -12,7 +12,7 @@ function Contact() {
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('/api/contact', form)
+    axios.post('https://waysaheadglobal-backend.onrender.com/api/contact', form)
       .then(() => alert('Message sent successfully'))
       .catch(err => console.error(err));
   };
