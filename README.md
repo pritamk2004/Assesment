@@ -67,6 +67,28 @@ npm start
 
 ---
 
+## **🚀 API Documentation**
+### **📌 Authentication APIs**
+| Method | Endpoint       | Description |
+|--------|--------------|-------------|
+| POST   | `/api/auth/register` | Register a new user |
+| POST   | `/api/auth/login` | Login & receive JWT token |
+| GET    | `/api/auth/profile` | Fetch user profile (Protected) |
+
+### **📌 Job Listings APIs**
+| Method | Endpoint       | Description |
+|--------|--------------|-------------|
+| GET    | `/api/jobs` | Get all job listings |
+| POST   | `/api/jobs/apply` | Apply for a job (Upload resume) |
+
+### **📌 Chatbot APIs**
+| Method | Endpoint       | Description |
+|--------|--------------|-------------|
+| POST   | `/api/chatbot/query` | Process chatbot query |
+| GET    | `/api/chatbot/logs` | Fetch chatbot interaction logs |
+
+---
+
 ## **🚀 Deployment**
 ### **1️⃣ Deploy Frontend to Netlify**
 ```bash
