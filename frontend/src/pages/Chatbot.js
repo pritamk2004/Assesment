@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet';
 import axios from 'axios';
 import { io } from "socket.io-client";
 
-const socket = io("http://localhost:5000");
+const socket = io("https://waysaheadglobal-backend.onrender.com/");
 
 // Chatbot Page
 function Chatbot() {
@@ -33,7 +33,7 @@ function Chatbot() {
     setMessage('');
     
     try {
-      const res = await axios.post('/api/chatbot', { userMessage: message });
+      const res = await axios.post('https://waysaheadglobal-backend.onrender.com/api/chatbot', { userMessage: message });
       setResponses((prev) => [...prev, { user: false, text: res.data.botResponse }]);
     } catch (error) {
       console.error(error);
