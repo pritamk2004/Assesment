@@ -117,6 +117,12 @@ git push origin main
 - Update `.env` with MongoDB URI.
 
 ---
+Live server link- 
+Frontend (React.js) Path:  https://whyaheadsglobal.netlify.app/
+Backend (Node.js + Express.js) Path: https://waysaheadglobal-backend.onrender.com
+Live Deployment Link: https://whyaheadsglobal.netlify.app/
+
+---
 
 ## **📖 Additional Notes**
 - **Testing:** Jest for backend testing.
